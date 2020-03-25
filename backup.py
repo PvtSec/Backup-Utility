@@ -4,7 +4,7 @@ from time import sleep
 
 package=input("Enter Package name \n")
 os.system('cls')
-command="adb backup -noapk "+package
+command="adb backup "+package
 
 os.system('adb devices')
 os.system(command)
